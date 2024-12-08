@@ -140,15 +140,15 @@ def print_receipt_line(item_name, price, quantity):
     price_spaces = " " * num_price_spaces
 
     # Print the item name, price, and quantity
-    print(f"{item_name}{item_spaces}| ${price}{price_spaces}| {quantity}")
+    print(f"{item_name}{item_spaces}│ ${price}{price_spaces}│ {quantity}")
 
 def print_receipt_heading():
     """
     Prints the receipt heading.
     """
-    print("----------------------------------------------------")
-    print("Item name                       | Price  | Quantity")
-    print("--------------------------------|--------|----------")
+    print("────────────────────────────────┬────────┬──────────")
+    print("Item name                       │ Price  │ Quantity")
+    print("────────────────────────────────┼────────┼──────────")
 
 def print_receipt_footer(total_price):
     """
@@ -157,17 +157,17 @@ def print_receipt_footer(total_price):
     Parameters:
     total_price (float): The total price of the order.
     """
-    print("----------------------------------------------------")
+    print("────────────────────────────────┴────────┴──────────")
     print(f"Total price: ${total_price:.2f}")
-    print("----------------------------------------------------")
+    print("────────────────────────────────────────────────────")
 
 def print_menu_heading():
     """
     Prints the menu heading.
     """
-    print("--------------------------------------------------")
-    print("Item # | Item name                        | Price")
-    print("-------|----------------------------------|-------")
+    print("───────┬──────────────────────────────────┬─────────")
+    print("Item # │ Item name                        │ Price")
+    print("───────┼──────────────────────────────────┼──────")
 
 def print_menu_line(index, food_category, meal, price):
     """
@@ -186,7 +186,7 @@ def print_menu_line(index, food_category, meal, price):
         i_spaces = " " * 6
     else:
         i_spaces = " " * 5
-    print(f"{index}{i_spaces}| {food_category} - {meal}{item_spaces} | ${price}")
+    print(f"{index}{i_spaces}│ {food_category} - {meal}{item_spaces} │ ${price}")
 
 def get_menu_items_dict(menu):
     """
