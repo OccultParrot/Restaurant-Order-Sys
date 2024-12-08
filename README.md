@@ -49,8 +49,8 @@ Please enter the menu item number of the item you would like to order:
 
 ## Installation
 
-```bash
-git clone https://github.com/yourusername/restaurant-ordering-system.git
-cd Restaurant-Order-Sys
-python main.py
-```
+Click the code button and click download zip
+
+Then extract the file and open the folder in terminal.
+
+Then type `py main.py` and enjoy!
